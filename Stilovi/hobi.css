@@ -1,0 +1,57 @@
+
+header {
+    height: 110px;
+    background-image: url(../Slike/nebo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 30px;
+}
+
+footer {
+    background-image: url(../Slike/trava1.jpg);
+    background-repeat: round;
+    height: 50px;
+    bottom: 0px;
+    font-size: 28px;
+
+}
+
+.pozadina {
+    background-image: url(../Slike/pozadinadecoupage.jpg);
+    height: 100%;
+    background-repeat: round;
+    margin: 0%;
+    padding: 0%;
+}
+.vidljivost{
+  
+    margin:0px;
+    padding: 16px;
+    background-color:lightseagreen;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+  }
+
+@font-face{
+    font-family:mojfont;
+    src: url(../Font/Sweet\ Hipster.ttf)
+}
+
+article{
+    font-family: mojfont;
+}
+p{
+    margin: 0%;
+  
+}
+
+img{
+    border: 3px solid lightseagreen;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+  }

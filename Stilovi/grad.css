@@ -1,0 +1,121 @@
+
+header {
+    height: 110px;
+    background-image: url(../Slike/nebo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 30px;
+}
+
+footer {
+    background-image: url(../Slike/trava1.jpg);
+    background-repeat:repeat;
+    height: 50px;
+    bottom: 0px;
+    font-size: 28px;
+}
+
+.pozadina {
+    background-image: url(../Slike/pozadinabec.jpg);
+    height: 100%;
+    background-size: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.vidljivost{
+  font-weight: bold;
+  font-style: italic;
+  margin:0px;
+  padding: 16px;
+  background-color:lightblue;
+  opacity: 0.6;
+  filter:alpha(opacity=60);
+}
+
+@font-face{
+    font-family:mojfont;
+    src: url(../Font/Sweet\ Hipster.ttf)
+}
+
+article{
+    font-family: mojfont;
+}
+table,td {color:rgb(12, 99, 180);
+        background-color:lightcyan;
+   border: 2px solid lightskyblue;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
